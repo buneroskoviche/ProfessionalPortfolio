@@ -29,19 +29,19 @@ header {
     width: auto;
 }
 
-/* Header navigation formatting */
+/* Aligning navigation links */
 nav {
     margin-right: 3%;
     width: auto;
 }
 
-/* Displaying the navigation list items side by side */
-nav ul li{
+/* Display list items side by side */
+ul li{
     display: inline-block;
     margin: 0px 20px;
 }
 
-/* Formatting the text of the navigation links */
+/* Sizing and spacing the text of the navigation links */
 nav a:link{
     color: whitesmoke;
     font-size: 200%;
@@ -49,6 +49,33 @@ nav a:link{
     text-decoration: none;
 }
 
+/* Hover settings for the nav links */
 nav a:link:hover{
     text-decoration: underline;
+}
+
+/* Sizing the 'category' containers */
+.category {
+    background-color: aliceblue;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+
+/* Creating the category header containers and formatting text */
+h2 {
+    color: #1f5a73;
+    text-align: center;
+    font-size: 250%;
+    width: 25%;
+    border-right: 5px solid #1f5a73;
+    padding: 2% 5% 2% 3%;
+    margin: 2% 0;
+}
+
+/* 'About me' text spacing */
+section p {
+    margin-left: 4%;
+    width: 70%;
 }
