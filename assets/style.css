@@ -1,3 +1,8 @@
+/* Default font family */
+* {
+    font-family: 'Helvetica', sans-serif;
+}
+
 /* Defining the header bar size and display */
 header {
     width: 100%;
@@ -9,7 +14,7 @@ header {
     background-color: #1d6685;
 }
 
-/* Aligning for the photo + name item */
+/* Aligning for the photo and my name */
 .avatar {
     display: flex;
     align-items: center;
@@ -49,9 +54,19 @@ nav a:link{
     text-decoration: none;
 }
 
-/* Hover settings for the nav links */
+/* Underline the text when hovering over nav links */
 nav a:link:hover{
     text-decoration: underline;
+}
+
+/* When you click a link, shrink it slightly */
+nav a:link:active{
+    font-size: 195%;
+}
+
+/* After a link is clicked, don't change the color */
+nav a:visited {
+    color: whitesmoke;
 }
 
 /* Sizing the 'category' containers */
@@ -63,7 +78,7 @@ nav a:link:hover{
     align-items: center;
 }
 
-/* Creating the category header containers and formatting text */
+/* Creating the category header containers and formatting the text */
 h2 {
     color: #1f5a73;
     text-align: center;
@@ -74,8 +89,53 @@ h2 {
     margin: 2% 0;
 }
 
+/* Make the 'Work' category white */
+#work {
+    background-color: white;
+    height: auto;
+}
+
 /* 'About me' text spacing */
 section p {
     margin-left: 4%;
     width: 70%;
+}
+
+/* Spacing for the contact list */
+section ul {
+    margin-left: 3%;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* Work block links wrap */
+.work-blocks {
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Create a work link block, space it, and set a position for the ::after */
+#work a {
+    height: 200px;
+    width: 200px;
+    margin: 10px;
+    background-image: url("../assets/images/shingles.jpg");
+    outline: 4px solid #1d6685;
+    position: relative;
+}
+
+/* Create a text box over the link block */
+#work a::after {
+    content: attr(data-desc);
+    font-size: 20px;
+    color: whitesmoke;
+    text-decoration: none;
+    display: inline-block;
+    width: inherit;
+    background-color: #1d6685;
+    position: absolute;
+    bottom: 10px;
 }
