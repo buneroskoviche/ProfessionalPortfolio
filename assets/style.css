@@ -136,10 +136,23 @@ section p {
     height: 250px;
     width: 250px;
     margin: 20px;
-    background-image: url("../assets/images/hexagons.jpg");
-    background-size: 200%;
     outline: 4px solid var(--mainColor);
     box-shadow: 10px 10px 4px 0px grey;
+}
+
+.block a {
+    display: inline-block;
+    position: absolute;
+    z-index: 1;
+    padding: 7.69em;
+    /* border: 2px solid black; */
+}
+
+.block img {
+    height: 250px;
+    width: 250px;
+    z-index: -1;
+    object-fit: none;
 }
 
 #big-block {
@@ -148,14 +161,14 @@ section p {
 }
 
 /* Create a text box over the link block */
-.block::after {
+.block a::after {
     content: attr(data-desc);
     font-size: 20px;
-    text-align: center;
+    text-align: left;
     color: var(--secondaryColor);
     text-decoration: none;
-    width: inherit;
     background-color: var(--mainColor);
     position: absolute;
+    left: 0px;
     bottom: 10px;
 }
