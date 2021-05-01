@@ -1,0 +1,34 @@
+/* Mobile friendly */
+@media screen and (max-width: 768px) {
+    
+    header {
+        height: auto;
+        flex-direction: column;
+    }
+    
+    .avatar {
+        display: block;
+        text-align: center;
+    }
+    .avatar img {
+        margin-left: 0%;
+    }
+    
+    .avatar h1 {
+        margin-left: 0%;
+    }
+    
+    .category {
+        flex-direction: column;
+    }
+    
+    .category h2 {
+        border-right: 0px;
+        border-bottom: 5px solid #1f5a73;
+    }
+    
+    .details {
+        margin-left: 0%;
+        width: 90%;
+    }
+    }
