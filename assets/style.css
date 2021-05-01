@@ -69,6 +69,11 @@ nav a:visited {
     color: whitesmoke;
 }
 
+.divider-img img{
+    width: 100%;
+    height: 10%;
+}
+
 /* Sizing the 'category' containers */
 .category {
     background-color: aliceblue;
@@ -83,7 +88,7 @@ h2 {
     color: #1f5a73;
     text-align: center;
     font-size: 250%;
-    width: 25%;
+    width: 250px;
     border-right: 5px solid #1f5a73;
     padding: 2% 5% 2% 3%;
     margin: 2% 0;
@@ -95,27 +100,18 @@ h2 {
     height: auto;
 }
 
-/* 'About me' text spacing */
-section p {
+/* Spacing and display for the category details */
+.details {
     margin-left: 4%;
     width: 70%;
-}
-
-/* Spacing for the contact list */
-section ul {
-    margin-left: 3%;
-    width: 70%;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-/* Work block links wrap */
-.work-blocks {
-    margin-left: 3%;
-    width: 70%;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/* 'About me' text spacing */
+section p {
+    margin: 2%;
 }
 
 /* Create a work link block, space it, and set a position for the ::after */
@@ -124,7 +120,7 @@ section ul {
     height: 250px;
     width: 250px;
     margin: 20px;
-    background-image: url("../assets/images/shingles.jpg");
+    background-image: url("../assets/images/hexagons.jpg");
     outline: 4px solid #1d6685;
     box-shadow: 10px 10px 4px 0px grey;
 }
@@ -136,9 +132,43 @@ section ul {
     text-align: center;
     color: whitesmoke;
     text-decoration: none;
-    display: inline-block;
     width: inherit;
     background-color: #1d6685;
     position: absolute;
     bottom: 10px;
+}
+
+/* Mobile friendly */
+@media screen and (max-width: 768px) {
+    
+header {
+    height: auto;
+    flex-direction: column;
+}
+
+.avatar {
+    display: block;
+    text-align: center;
+}
+.avatar img {
+    margin-left: 0%;
+}
+
+.avatar h1 {
+    margin-left: 0%;
+}
+
+.category {
+    flex-direction: column;
+}
+
+.category h2 {
+    border-right: 0px;
+    border-bottom: 5px solid #1f5a73;
+}
+
+.details {
+    margin-left: 0%;
+    width: 90%;
+}
 }
