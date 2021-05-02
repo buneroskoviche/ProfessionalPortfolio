@@ -1,0 +1,33 @@
+/* Sizing and spacing the text of the navigation links */
+nav a:link{
+    color: var(--secondaryColor);
+    font-size: 200%;
+    padding: 3px;
+    text-decoration: none;
+}
+
+/* Underline the text when hovering over nav links */
+nav a:link:hover{
+    text-decoration: underline;
+}
+
+/* When you click a link, shrink it slightly */
+nav a:link:active{
+    font-size: 195%;
+}
+
+/* After a link is clicked, don't change the color */
+nav a:visited {
+    color: var(--secondaryColor);
+}
+
+/* When you hover over a work link, make the image clear */
+.block:hover img {
+    opacity: 1;
+}
+
+/* When you click a work link, push it down slightly*/
+.block:active {
+    margin: 10px 10px 7px 7px;
+    box-shadow: 5px 5px 4px 0px grey;
+}

@@ -46,29 +46,6 @@ ul li{
     margin: 0px 20px;
 }
 
-/* Sizing and spacing the text of the navigation links */
-nav a:link{
-    color: var(--secondaryColor);
-    font-size: 200%;
-    padding: 3px;
-    text-decoration: none;
-}
-
-/* Underline the text when hovering over nav links */
-nav a:link:hover{
-    text-decoration: underline;
-}
-
-/* When you click a link, shrink it slightly */
-nav a:link:active{
-    font-size: 195%;
-}
-
-/* After a link is clicked, don't change the color */
-nav a:visited {
-    color: var(--secondaryColor);
-}
-
 /* Style the dividing hexagons */
 .divider-img {
     width: 100%;
@@ -122,7 +99,6 @@ h2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    align-items: flex-end;
 }
 
 /* 'About me' text spacing */
@@ -134,28 +110,46 @@ section p {
 .block {
     position: relative;
     height: 250px;
-    width: 250px;
-    margin: 20px;
-    background-image: url("../assets/images/hexagons.jpg");
-    background-size: 200%;
+    width: 42%;
+    margin: 10px 10px;
     outline: 4px solid var(--mainColor);
     box-shadow: 10px 10px 4px 0px grey;
 }
 
+/* Create a link box over a block */
+.block a {
+    display: inline-block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    padding: 7.69em;
+}
+
+/* Format the image to fit the link box */
+.block img {
+    height: 250px;
+    width: 100%;
+    opacity: 0.75;
+    z-index: -1;
+    object-fit: cover;
+}
+
+/* Make the top block double wide */
 #big-block {
-    height: 300px;
-    width: 570px;
+    width: 92%;
 }
 
 /* Create a text box over the link block */
-.block::after {
+.block a::after {
     content: attr(data-desc);
+    padding: 10px;
     font-size: 20px;
-    text-align: center;
+    text-align: left;
     color: var(--secondaryColor);
     text-decoration: none;
-    width: inherit;
     background-color: var(--mainColor);
     position: absolute;
+    left: 0px;
     bottom: 10px;
 }
