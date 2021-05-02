@@ -46,29 +46,6 @@ ul li{
     margin: 0px 20px;
 }
 
-/* Sizing and spacing the text of the navigation links */
-nav a:link{
-    color: var(--secondaryColor);
-    font-size: 200%;
-    padding: 3px;
-    text-decoration: none;
-}
-
-/* Underline the text when hovering over nav links */
-nav a:link:hover{
-    text-decoration: underline;
-}
-
-/* When you click a link, shrink it slightly */
-nav a:link:active{
-    font-size: 195%;
-}
-
-/* After a link is clicked, don't change the color */
-nav a:visited {
-    color: var(--secondaryColor);
-}
-
 /* Style the dividing hexagons */
 .divider-img {
     width: 100%;
@@ -134,23 +111,25 @@ section p {
 .block {
     position: relative;
     height: 250px;
-    width: 250px;
-    margin: 20px;
+    width: 42%;
+    margin: 10px 10px;
     outline: 4px solid var(--mainColor);
     box-shadow: 10px 10px 4px 0px grey;
 }
 
+/* Create a link box over a block */
 .block a {
     display: inline-block;
     position: absolute;
     z-index: 1;
     padding: 7.69em;
-    /* border: 2px solid black; */
 }
 
+/* Format the image to fit the link box */
 .block img {
     height: 250px;
-    width: 250px;
+    width: 100%;
+    opacity: 0.75;
     z-index: -1;
     object-fit: none;
 }
@@ -163,6 +142,7 @@ section p {
 /* Create a text box over the link block */
 .block a::after {
     content: attr(data-desc);
+    padding: 10px;
     font-size: 20px;
     text-align: left;
     color: var(--secondaryColor);
