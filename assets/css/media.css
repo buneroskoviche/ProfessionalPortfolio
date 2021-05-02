@@ -1,32 +1,40 @@
 /* Mobile friendly */
 @media screen and (max-width: 768px) {
     
+    /* Set the header to display column */
     header {
         height: auto;
         flex-direction: column;
     }
     
+    /* Center align the name and photo in the header */
     .avatar {
         display: block;
         text-align: center;
     }
+
+    /* Remove unnecessary margins from the avatar */
     .avatar img {
         margin-left: 0%;
     }
     
+    /* Remove unnecesssary margins from my name */
     .avatar h1 {
         margin-left: 0%;
     }
     
+    /* Display categories in column */
     .category {
         flex-direction: column;
     }
     
+    /* Move the header border to the bottom */
     .category h2 {
         border-right: 0px;
         border-bottom: 5px solid #1f5a73;
     }
     
+    /* Resize the margins for the category details to better fit the screen */
     .details {
         margin-left: 0%;
         width: 90%;

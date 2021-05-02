@@ -50,7 +50,7 @@ ul li{
 .divider-img {
     width: 100%;
     height: 200px;
-    background-image: url("../assets/images/hexagons3.jpg");
+    background-image: url("../images/hexagons3.jpg");
     background-size: cover;
     background-position: center;
     box-shadow: inset -4px 4px 10px 0px;
@@ -77,11 +77,11 @@ ul li{
 
 /* Creating the category header containers and formatting the text */
 h2 {
-    color: #1f5a73;
+    color: var(--textMain);
     text-align: center;
     font-size: 250%;
     width: 250px;
-    border-right: 5px solid #1f5a73;
+    border-right: 5px solid var(--textMain);
     padding: 2% 5% 2% 3%;
     margin: 2% 0;
 }
@@ -152,4 +152,18 @@ section p {
     position: absolute;
     left: 0px;
     bottom: 10px;
+}
+
+/* Make the footer flex so that we can center it */
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+/* Format the footer link */
+footer a{
+    font-size: 200%;
+    text-decoration: none;
+    color: var(--textMain);
+    margin: 20px;
 }
