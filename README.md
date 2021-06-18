@@ -13,7 +13,7 @@ Users can find links to my GitHub and LinkedIn pages
 Users can move back to the top of the page using the link in the footer
 
 ## Link to the page
-https://buneroskoviche.github.io/hw2/
+https://buneroskoviche.github.io/ProfessionalPortfolio/
 
 ## Screenshots
 ![Screenshot 1](./assets/images/screenshot1.png)
