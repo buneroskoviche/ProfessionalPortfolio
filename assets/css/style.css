@@ -6,18 +6,19 @@
 /* Defining the header bar size and display */
 header {
     width: 100%;
-    height: 100px;
+    height: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
     color: var(--secondaryColor);
-    background-color: var(--mainColor);
+    background-image: linear-gradient(0deg, #061a23, var(--mainColor));
 }
 
 /* Aligning for the photo and my name */
 .avatar {
     display: flex;
     align-items: center;
+    margin: 1%;
 }
 
 /* Header photo settings */
@@ -25,6 +26,7 @@ header {
     height: 95px;
     margin-left: 2px;
     border-radius: 10px;
+    box-shadow: 3px 3px 3px black;
 }
 
 /* Header name text settings */
@@ -36,18 +38,26 @@ header {
 
 /* Aligning navigation links */
 nav {
-    margin-right: 3%;
-    width: auto;
+    display: flex;
+    justify-content: center;
+    width: 95%;
 }
 
 /* Display list items side by side */
 ul li{
     display: inline-block;
-    margin: 0px 20px;
+    margin: 5px 20px;
+}
+
+/* Space the header links */
+header ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 /* Style the dividing hexagons */
-.divider-img {
+.hero {
     width: 100%;
     height: 200px;
     background-image: url("../images/hexagons3.jpg");
@@ -58,7 +68,7 @@ ul li{
 }
 
 /* Place a subtitle over the divier hexagons using absolute position*/
-.divider-img p {
+.hero p {
     position: absolute;
     color: var(--secondaryColor);
     bottom: 20px;
@@ -99,6 +109,10 @@ h2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+}
+
+#contact .details {
+    font-size: 170%;
 }
 
 /* 'About me' text spacing */
@@ -158,12 +172,13 @@ section p {
 footer {
     display: flex;
     justify-content: center;
+    background-image: linear-gradient(180deg, #061a23, var(--mainColor));
 }
 
 /* Format the footer link */
 footer a{
     font-size: 200%;
     text-decoration: none;
-    color: var(--textMain);
+    color: var(--secondaryColor);
     margin: 20px;
 }
