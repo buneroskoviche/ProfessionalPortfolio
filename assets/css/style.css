@@ -4,7 +4,7 @@
 }
 
 /* Defining the header bar size and display */
-header {
+#header {
     width: 100%;
     height: auto;
     display: flex;
@@ -19,6 +19,7 @@ header {
     display: flex;
     align-items: center;
     margin: 1%;
+    width: 25%;
 }
 
 /* Header photo settings */
@@ -40,20 +41,15 @@ header {
 nav {
     display: flex;
     justify-content: center;
-    width: 95%;
-}
-
-/* Display list items side by side */
-ul li{
-    display: inline-block;
-    margin: 5px 20px;
+    width: 100%;
 }
 
 /* Space the header links */
-header ul {
+#header ul {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
+    width: 65%;
 }
 
 /* Style the dividing hexagons */
@@ -111,9 +107,17 @@ h2 {
     justify-content: space-around;
 }
 
+/* Contact link text is bigger */
 #contact .details {
     font-size: 170%;
 }
+
+/* Display contact list items */
+#contact ul li{
+    display: inline-block;
+    margin: 5px 20px;
+}
+
 
 /* 'About me' text spacing */
 section p {

@@ -2,10 +2,14 @@
 @media screen and (max-width: 768px) {
     
     /* Set the header to display column */
-    header {
+    #header {
         height: auto;
         flex-direction: column;
         padding-bottom: 2%;
+    }
+
+    #header ul {
+        width: 100%;
     }
     
     /* Center align the name and photo in the header */
@@ -13,6 +17,7 @@
         display: block;
         text-align: center;
         margin-bottom: 1%;
+        width: 100%
     }
 
     /* Remove unnecessary margins from the avatar */
@@ -25,6 +30,7 @@
     /* Remove unnecesssary margins from my name */
     .avatar h1 {
         margin-left: 0%;
+        width: 100%;
     }
     
     /* Display categories in column */
