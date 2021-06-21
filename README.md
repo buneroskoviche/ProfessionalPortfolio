@@ -16,6 +16,6 @@ Users can move back to the top of the page using the link in the footer
 https://buneroskoviche.github.io/ProfessionalPortfolio/
 
 ## Screenshots
-![Screenshot 1](./assets/images/screenshot1.png)
+![screenshot1](https://user-images.githubusercontent.com/80650523/122840967-6083d500-d2b8-11eb-9c3f-859b78c2236a.PNG)
 
-![Screenshot 2](./assets/images/screenshot2.png)
+![screenshot2](https://user-images.githubusercontent.com/80650523/122840977-68dc1000-d2b8-11eb-86fb-b8bba896c1dc.PNG)
