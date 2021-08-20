@@ -127,49 +127,61 @@ section p {
 /* Create a work link block, space it, and set a position for the ::after */
 .block {
     position: relative;
-    height: 250px;
+    height: 350px;
     width: 42%;
     margin: 10px 10px;
-    outline: 4px solid var(--mainColor);
+    background-color: var(--mainColor);
     box-shadow: 10px 10px 4px 0px grey;
+    display: flex;
+    flex-direction: column;
+    padding: 1%;
+    border-radius: 3%;
 }
 
-/* Create a link box over a block */
-.block a {
-    display: inline-block;
-    position: absolute;
+/* Work link name */
+.block-details {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: inherit;
+    color: var(--secondaryColor);
+}
+
+/* Scale the titles of the works */
+h3 {
+    font-size: xx-large;
+}
+
+.block-details a {
+    text-decoration: none;
+    color: var(--secondaryColor);
+}
+
+.block-link {
     width: 100%;
+    min-height: 70%;
+    margin-bottom: 2%;
+}
+
+/* Formats the img of the work link to fit */
+.block-link img {
     height: 100%;
-    z-index: 1;
-    padding: 7.69em;
-}
-
-/* Format the image to fit the link box */
-.block img {
-    height: 250px;
     width: 100%;
-    opacity: 0.75;
-    z-index: -1;
     object-fit: cover;
+    border-radius: 3%;
+    filter: brightness(0.9);
 }
 
 /* Make the top block double wide */
 #big-block {
     width: 92%;
+    border-radius: 15px;
 }
 
-/* Create a text box over the link block */
-.block a::after {
-    content: attr(data-desc);
-    padding: 10px;
-    font-size: 20px;
-    text-align: left;
-    color: var(--secondaryColor);
-    text-decoration: none;
-    background-color: var(--mainColor);
-    position: absolute;
-    left: 0px;
-    bottom: 10px;
+#big-block .block-link img{
+    border-radius: 15px;
 }
 
 /* Make the footer flex so that we can center it */

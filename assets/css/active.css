@@ -22,14 +22,13 @@ nav a:visited {
 }
 
 /* When you hover over a work link, make the image clear */
-.block:hover img {
-    opacity: 1;
+.block-link:hover img {
+    filter: brightness(1);
 }
 
-/* When you click a work link, push it down slightly*/
-.block:active {
-    margin: 10px 10px 7px 7px;
-    box-shadow: 5px 5px 4px 0px grey;
+/* When you hover over a github link, underline it*/
+.block-details a:hover {
+    text-decoration: underline;
 }
 
 /* Underline the text when hovering over footer link */
