@@ -105,6 +105,10 @@ nav {
     filter: brightness(1);
 }
 
+.hide  {
+    display: none;
+}
+
 /* Creating the category header containers and formatting the text */
 section h2 {
     color: var(--textMain);

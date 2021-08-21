@@ -24,6 +24,12 @@ nav a:visited {
 .tab:hover{
     border-bottom: 3px solid var(--textMain);
     padding-top: 3px;
+    cursor: pointer;
+}
+
+.active-tab:hover {
+    padding-top: 0;
+    border: none;
 }
 
 /* When you hover over a work link, make the image clear */
