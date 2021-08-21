@@ -21,6 +21,11 @@ nav a:visited {
     color: var(--secondaryColor);
 }
 
+.tab:hover{
+    border-bottom: 3px solid var(--textMain);
+    padding-top: 3px;
+}
+
 /* When you hover over a work link, make the image clear */
 .block-link:hover img {
     filter: brightness(1);
