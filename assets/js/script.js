@@ -3,6 +3,7 @@ const categories = document.querySelectorAll('.category')
 const tabSelect = (event) => {
     event.preventDefault();
     const tabSelected = event.target
+    
 
     // remove the active class from the current active
     document.querySelector('.active-tab').classList.remove('active-tab');
