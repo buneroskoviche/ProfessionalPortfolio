@@ -11,11 +11,6 @@ nav a:link:hover{
     text-decoration: underline;
 }
 
-/* When you click a link, shrink it slightly */
-nav a:link:active{
-    font-size: 195%;
-}
-
 /* After a link is clicked, don't change the color */
 nav a:visited {
     color: var(--secondaryColor);
